@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* apply a natural box layout model to all elements */
+*,
+*::after,
+*::before,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* s */
+select,
+textarea {
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-padding-start: 0;
+  align-items: flex-start;
+  text-index: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  line-height: 1em; }
+
+/* s appearance (not for every )  */
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=file],
+[type=month],
+[type=number],
+[type=password],
+[type=reset],
+[type=reset],
+[type=search],
+[type=submit],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+select,
+textarea {
+  height: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/*  color width */
+[type=color] {
+  width: 1em; }
+
+/* IE clear cross */
+::-ms-clear {
+  display: none; }
+
+/* details and summary */
+details,
+summary {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* text size adjusting */
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* mark */
+mark {
+  background: none; }
+
+/* Font smoothing */
+/**,*::before,*::after,*:before,*:after {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+/* hr */
+hr {
+  height: 1px;
+  margin: 0;
+  padding: 0; }
+
+/* u */
+u {
+  text-decoration: none; }
+
+/* th */
+table th {
+  text-align: left; }
+
+/* a */
+a {
+  color: inherit;
+  outline: none; }
+
+body {
+  background-color: #66CCFF;
+  padding: 50px;
+  font-family: sans-serif; }
+
+#container {
+  display: flex;
+  justify-content: center; }
+
+.card-form .header-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px; }
+
+.card-form .header-form button {
+  padding: 20px;
+  font-size: 16px;
+  margin: 10px 0 10px 10px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF; }
+  .card-form .header-form button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer; }
+
+.card-form .List {
+  list-style: none;
+  padding-left: 0;
+  width: 250px; }
+
+.card-form .List li {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px; }
+  .card-form .List li:hover {
+    cursor: pointer;
+    background-color: pink; }
+
+.header {
+  display: block;
+  min-height: 20vh;
+  background-color: #221F1F;
+  text-align: center;
+  margin-bottom: 10vh; }
+  .header h1 {
+    padding-top: 40px;
+    font-size: 3rem;
+    color: #EDE5D5; }

@@ -1,0 +1,27 @@
+{
+  "name": "react-test-1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concat": "^1.0.3",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-flip-move": "^3.0.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar ./src/partials/App.scss -o ./src/partials/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/partials/App.scss -o src/partials --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "create-react-class": "^15.6.2"
+  }
+}
