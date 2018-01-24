@@ -3,5 +3,5 @@ Thanks to Kirupa for making my react learning easier ! This is basically his/her
 (https://www.kirupa.com/react/simple_todo_app_react.htm)
 
 ## How to Start##
-*Just type "npm install" in your terminal
-*Then type npm start, and you're good to go !
+* Just type "npm install" in your terminal
+* Then type npm start, and you're good to go !
