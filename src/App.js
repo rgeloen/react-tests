@@ -37,7 +37,7 @@ class TodoItems extends Component {
 };
 
 
-class TodoList extends React.Component {
+class TodoList extends Component {
   constructor(props, context) {
     super(props, context);
 
@@ -53,7 +53,7 @@ class TodoList extends React.Component {
     var itemArray = this.state.items;
 
     if (this._inputElement.value !== "") {
-      itemArray.unshift({ // add item array element to beginning of items array if input has text, and return items length
+      itemArray.push({ // add item array element to beginning of items array if input has text, and return items length
         text: this._inputElement.value, //input value of form (thx to ref, i can access to input value)
         key: Date.now()
     });
@@ -85,9 +85,7 @@ class TodoList extends React.Component {
       <div className="card-form">
         <div className="header-form">
           <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a} placeholder="enter task">
-
-            </input>
+            <input ref={(a) => this._inputElement = a} placeholder="enter task"></input>
             <button type="submit">add</button>
           </form>
         </div>
