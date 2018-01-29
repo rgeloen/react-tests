@@ -14,7 +14,8 @@ class TodoItems extends Component {
 
   createCards(card) { // adding item to the array items
     return <li onClick={() => this.delete(card.key)}
-      key={card.key}>{card.text}</li> // event handling for delete item & key attribute for knowing which item from "items"
+      key={card.key}> {card.title} <br/> Pour le : {card.date} </li> // NEED TO PUT DESC IN LI
+      // event handling for delete item & key attribute for knowing which item from "items"
   }
 
   render() {

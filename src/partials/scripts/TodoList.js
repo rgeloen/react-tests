@@ -6,8 +6,11 @@ class TodoList extends Component {
     super(props, context);
 
     this.state = {
-        cards: []
-      };
+      cards: [],
+      title: '',
+      date: '',
+      description: ''
+    };
 
     this.addCard = this.addCard.bind(this); // making this method working on functions like "addItem()"
     this.deleteCard = this.deleteCard.bind(this); // all references to "this" inside deleteItem will reference the correct thing
@@ -15,20 +18,18 @@ class TodoList extends Component {
 
   addCard(e) { // add item component in items array
     var cardsArray = this.state.cards;
-
-    if (this._inputElement.value !== "") {
+    if (this._inputElement1.value !== "") {
       cardsArray.unshift({ // add item array element to beginning of items array if input has text, and return items length
-        text: this._inputElement.value, //input value of form (thx to ref, i can access to input value)
+        title: this._inputElement1.value, //input value of form (thx to ref, i can access to input value)
+        date: this._inputElement2.value, //input value of form (thx to ref, i can access to input value)
+        description: this._inputElement3.value, //input value of form (thx to ref, i can access to input value)
         key: Date.now()
-    });
-
-    this.setState({
-      cards: cardsArray
-    });
-
-    this._inputElement.value = ""; // default value recalls after the process is done
-  }
-
+      });
+      this.setState({cards: cardsArray});
+      this._inputElement1.value = ""; // default value recalls after the process is done  // NOT MAINTENABLE
+      this._inputElement2.value = ""; // default value recalls after the process is done
+      this._inputElement3.value = ""; // default value recalls after the process is done
+    }
     e.preventDefault(); // By default, when you submit a form, the page reloads and clears everything out. We don't want that.
   }
 
@@ -47,7 +48,9 @@ class TodoList extends Component {
       <div className="card-form">
         <div className="header-form">
           <form onSubmit={this.addCard}>
-            <input ref={(a) => this._inputElement = a} placeholder="enter task"></input>
+            <input name="title" className="form-title" ref={(a) => this._inputElement1 = a} placeholder="Title" ></input>
+            <input name="date" className="form-date" ref={(b) => this._inputElement2 = b} placeholder="Date" ></input>
+            <textarea className="form-description" ref={(c) => this._inputElement3 = c} placeholder="Description"/>
             <button type="submit">add</button>
           </form>
         </div>

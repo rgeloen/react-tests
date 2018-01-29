@@ -8,7 +8,9 @@ class TodoCard extends Component{
     render(){
       return(
         <div className="card-sheet">
-          <h1 className="card-sheet-title">{}</h1>
+          <h1 className="card-sheet-title">test</h1>
+          <h2 className="card-sheet-date"> 02/02/1998</h2>
+          <p className="card-sheet-description">restdyfu!içào)içu!yèt§fdf!èçyàuç)iuçyà!tgèfrdfg!uçài)àu)çy!tègf§!èghyàçu)iuy!çtèy!àuççyà!çtè!§ètyazeazeazeazezesrdtfyguiçoàazeaèçyàuç)iuçyà!tgèfrdfg!uçài)àu)çydfg!uçài)àu)çyèçyàuç)iuçyà!tgèfrdfg!uçài)àu)çy </p>
         </div>
       )
     }
