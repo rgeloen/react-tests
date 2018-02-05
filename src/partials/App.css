@@ -233,8 +233,9 @@ a {
   outline: none; }
 
 body {
-  background-color: #66CCFF;
-  font-family: sans-serif; }
+  background-color: #fefefe;
+  font-family: sans-serif;
+  color: #221F1F; }
 
 #container {
   padding: 50px;
@@ -306,14 +307,3 @@ body {
     border: 2px solid #003399;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     cursor: pointer; }
-
-.header {
-  display: block;
-  min-height: 20vh;
-  background-color: #221F1F;
-  text-align: center;
-  margin-bottom: 10vh; }
-  .header h1 {
-    padding-top: 40px;
-    font-size: 3rem;
-    color: #EDE5D5; }
