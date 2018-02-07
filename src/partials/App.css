@@ -237,9 +237,24 @@ body {
   font-family: sans-serif;
   color: #221F1F; }
 
-#container {
-  padding: 50px;
-  justify-content: center; }
+.header {
+  width: 100vw;
+  height: 120px;
+  background-color: #221F1F;
+  color: #EDE5D5;
+  list-style-type: none;
+  padding: 40px; }
+  .header span {
+    margin-right: 20%; }
+    .header span a {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 23px;
+      cursor: pointer;
+      transition-duration: 0.3s; }
+    .header span a:hover {
+      opacity: 0.7;
+      transition-duration: 0.3s; }
 
 .card-form .List {
   display: inline-block;
@@ -265,7 +280,7 @@ body {
 
 .card-form .header-form {
   display: inline-block;
-  background-color: blue;
+  background-color: #221F1F;
   width: 30vw;
   height: 65vh; }
 
@@ -297,13 +312,13 @@ body {
   margin: 0 auto;
   padding: 20px;
   font-size: 16px;
-  background-color: #0066FF;
-  color: #FFF;
-  border: 2px solid #0066FF;
+  background-color: #fefefe;
+  color: #221F1F;
+  border: 2px solid dark;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .card-form button:hover {
-    background-color: #003399;
-    border: 2px solid #003399;
+    background-color: grey;
+    border: 2px solid #fefefe;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     cursor: pointer; }
